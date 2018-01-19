@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> CIT 230 Assignment Portal|Dane Woodruff|BYU-Idaho</title>
+    <meta name="description" content="portal page for Dane Woodruff">
+     <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+   <header>
+    <h1>Dane Woodruff</h1>
+   </header>
+   <nav>
+    a future main menu is under construction
+   </nav>
+   <main>
+    <h2>CIT 230-Assignment Portal</h2>
+    <li>Lesson 02:<a href="Reflection">Assignment Label</a></li>
+    <img src="dane.jpg" width="200" height="273" alt="My Profile Picture">
+   </main>
+   <footer>
+    <p>&#160;2018 Dane Woodruff Nashville,TN
+        <a href="http://www.byui.edu/online"BYU-Idaho Online Learning></a>
+    </p>
+   </footer>
+  
+  </body>
+</html>
