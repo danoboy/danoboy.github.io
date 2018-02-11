@@ -3,11 +3,129 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Franklin Forecaster</title>
-  <meta name="author" content="Your Name Here">
+  <title>The Tri-County Weathervane</title>
+  <meta name="author" content="Dane Woodruff">
   <meta name="description" content="page description placeholder">
   <!-- external style references in the proper cascading order -->    
-  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:700i" rel="stylesheet">  <!-- Google API font reference -->
+    <style>
+          
+        h1 {font-size:250%}
+         img {float:left;
+            }
+        .subheading {font-size: 100%;}
+        h2 {color: gray;
+            font-size: 180%;
+            margin:5px;
+           }
+        h3 {color:gray;
+            }
+        body {font-family: 'Libre Franklin', sans-serif;
+               
+              top: 30px;
+              background-color: blue;
+              margin:1;
+             }
+        article img {
+            float:right;
+            margin:-3%;
+             }
+        article p {text-align: left;
+                   font-size: 90%;
+                   color:blue;
+                   margin-left: inherit;
+                margin-right: inherit;
+                   float:
+                   }
+        
+        /*******************header*******************************************/
+         header {color: floralwhite;
+         background-image:url("assignments/lesson-5/image/images-2.jpeg");
+         background-color: gray;
+         background-repeat: no-repeat;
+         background-size: cover;
+         border-radius: 10px;
+         text-align: center;
+         float: none;
+        }
+        /********************navbar*****************************************/
+        nav { position: absolute;}
+        nav {left: -10px;
+             top: 0;
+            }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: gold;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+            
+           }
+
+           /* Links inside the navbar */
+        li a {
+           float: left;
+           display: block;
+           color: #0000ff;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+           }
+           /* Change background on mouse-over */
+           li a:hover {
+           background: #ddd; color: black;
+           }
+           li {
+            float: left;
+            border-right: 1px solid blue;    
+           }
+           li:last-child {border-right: none; float:right;
+           }
+        .active {
+         background-color: coral;   
+        }
+         /***************main*******************************/
+        table {width: 100%;}
+        table, th, td {border: 1px solid blue;        
+        }
+        th {color: lightcyan;
+            background: blue;
+        }
+        td {background: gold;}
+        main {display: all;
+         background: lightcyan;
+         border-radius: 5px;        
+        }
+        picture {float: right;
+        margin: 25px 35px 0px 20px;}
+        section {
+         border-top: 1px solid blue;
+        }
+        .forecast {
+         border-top: 1px solid blue;
+        }
+        main div {color:blue}
+            span { display:block }
+       @media screen and (max-width:480px) {
+        span#yourspan { display:none }
+        }
+        /*************************footer**************************/
+        footer {color: blue; background-color: lightcyan;
+         border-radius: 5px;
+         padding: 5px;
+         font-size: 80%;
+        }
+        aside {
+         border-left: 1px solid blue;
+         width: 20%;
+         text-align:center;
+         float:right;
+         font-size: 70%
+                 }
+    </style>
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
   <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
   <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
@@ -15,10 +133,10 @@
 </head>
 <body>
 
-  <header>
-    <img src="images/#" alt="The site logo" width="" height="">
-    <h1>Title</h1>
-    <div class="subheading">Site Motto</div>
+  <header>    
+          <img src="assignments/lesson-5/image//vane-logo.jpeg" alt="weathervane" width="75" height="80"> 
+      <h1>The Tri-County Weathervane</h1>
+    <div class="subheading">The Accurate Forecaster!</div>
   </header>
 
   <!-- site navigation use placeholder references -->
@@ -39,21 +157,24 @@
     <figure>
       <img>
     </figure>
+      
     <section>
-      <h3>Weather Summary</h3>    
+        <picture>
+            <img src="assignments/lesson-5/image/sunny2.jpeg" alt="sunny field" width="" height="">
+        </picture>
+      <h3>Weather Summary</h3>
+        
       <div class="highlow">
-        <p>High:</p>  
-        <p>Low:</p>  
+        <p>High: 89</p>  
+        <p>Low: 72</p>  
       </div>
       <div class="current">
         Sunny
-        <picture>
-            <img src="images/#" alt="" width="" height="">
-        </picture>
+        
       </div>   
       <div class="conditions">
-        <p>Precipitation:</p>  
-        <p>Wind Speed:</p>  
+        <p>Precipitation: 100%</p>  
+        <p>Wind Speed: 5 miles per hour</p>  
       </div>           
     </section>
         
@@ -92,10 +213,14 @@
     </section>
       
     <article>
-      <h3>Franklin Breaks Record</h3>	
-      <p class="town-article">
-        <img src="images/#" alt="" width="" height="">
-        short article content placeholder
+         <img src="assignments/lesson-5/image//nature2.jpeg" alt="romantic walk" width="190px" height="130px">
+      <h3>Valentine tips:</h3>
+       
+      <p class="Romantic picnic locations">
+        
+        When choosing a location for your romantic picnic, it’s all about finding a place where you and your lover can relax and enjoy each other’s company with minimal distractions. Perhaps the perfect location is the park where you first met, or maybe it’s your favorite beach where you’ve taken many long strolls together. Just be sure to check the weather to make sure all goes well.
+
+       
       </p>
 		</article>		  
   
@@ -103,9 +228,9 @@
     
   <footer>
     <aside>
-      Contact information placeholder
+      Contact us at: 1313 Mockingbird Lane Franklin, TN 37110 (931)555-5555
     </aside>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Tri-County Weathervane | <span id="currentdate">2011-02-08</span></p>
   </footer>
 
   <script src="scripts/hamburger.js"></script>
