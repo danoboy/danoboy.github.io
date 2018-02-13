@@ -9,20 +9,21 @@
   <!-- external style references in the proper cascading order -->    
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:700i" rel="stylesheet">  <!-- Google API font reference -->
     <style>
-          
+/* *********|makes .forecast disappear when small|***************** */
+        @media all and (max-width: 400px) {
+        .forecast {display: none;} }
+/* ***********|general|******************************************* */
         h1 {font-size:250%}
-         img {float:left;
-            }
+         img {float:left;}
         .subheading {font-size: 100%;}
         h2 {color: gray;
             font-size: 180%;
             margin:5px;
            }
-        h3 {color:gray;
-            }
+        h3 {color:gray;}
         body {font-family: 'Libre Franklin', sans-serif;
-               
-              top: 30px;
+              position: relative;
+              top: 30px;             
               background-color: blue;
               margin:1;
              }
@@ -36,9 +37,8 @@
                    margin-left: inherit;
                 margin-right: inherit;
                    float:
-                   }
-        
-        /*******************header*******************************************/
+                   }        
+        /*******************|header|*******************************************/
          header {color: floralwhite;
          background-image:url("assignments/lesson-5/image/images-2.jpeg");
          background-color: gray;
@@ -48,7 +48,7 @@
          text-align: center;
          float: none;
         }
-        /********************navbar*****************************************/
+        /********************|navbar|*****************************************/
         nav { position: absolute;}
         nav {left: -10px;
              top: 0;
@@ -61,17 +61,15 @@
             background-color: gold;
             position: fixed; /* Set the navbar to fixed position */
             top: 0; /* Position the navbar at the top of the page */
-            width: 100%; /* Full width */
-            
+            width: 100%; /* Full width */            
            }
-
            /* Links inside the navbar */
         li a {
            float: left;
            display: block;
            color: #0000ff;
            text-align: center;
-           padding: 14px 16px;
+           padding: 5px 5px;
            text-decoration: none;
            }
            /* Change background on mouse-over */
@@ -82,12 +80,13 @@
             float: left;
             border-right: 1px solid blue;    
            }
-           li:last-child {border-right: none; float:right;
+           li:last-child {
+            border-right: none; float:right;
            }
         .active {
          background-color: coral;   
         }
-         /***************main*******************************/
+         /***************|main|*******************************/
         table {width: 100%;}
         table, th, td {border: 1px solid blue;        
         }
@@ -100,19 +99,17 @@
          border-radius: 5px;        
         }
         picture {float: right;
-        margin: 25px 35px 0px 20px;}
+        margin: 25px 35px 0px 20px;
+        border-radius: 5px;}
         section {
          border-top: 1px solid blue;
         }
+        /*.highlow {color: red;}*/
         .forecast {
          border-top: 1px solid blue;
         }
-        main div {color:blue}
-            span { display:block }
-       @media screen and (max-width:480px) {
-        span#yourspan { display:none }
-        }
-        /*************************footer**************************/
+        main div {color:blue;}       
+        /*************************|footer|**************************/
         footer {color: blue; background-color: lightcyan;
          border-radius: 5px;
          padding: 5px;
@@ -126,11 +123,15 @@
          font-size: 70%
                  }
     </style>
+<!--********************|normalize|*****************************--> 
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
   <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
   <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
-  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views -->
 </head>
+<!--/****************************************************************
+ BODY
+*****************************************************************/-->
 <body>
 
   <header>    
@@ -216,13 +217,11 @@
          <img src="assignments/lesson-5/image//nature2.jpeg" alt="romantic walk" width="190px" height="130px">
       <h3>Valentine tips:</h3>
        
-      <p class="Romantic picnic locations">
+      <p class="town-article">
         
-        When choosing a location for your romantic picnic, it’s all about finding a place where you and your lover can relax and enjoy each other’s company with minimal distractions. Perhaps the perfect location is the park where you first met, or maybe it’s your favorite beach where you’ve taken many long strolls together. Just be sure to check the weather to make sure all goes well.
-
-       
+        When choosing a location for your romantic picnic, it’s all about finding a place where you and your lover can relax and enjoy each other’s company with minimal distractions. Perhaps the perfect location is the park where you first met, or maybe it’s your favorite hiking location where you’ve taken many long strolls together. Just be sure to check the weather to make sure all goes well. 
       </p>
-		</article>		  
+	</article>		  
   
   </main>
     
