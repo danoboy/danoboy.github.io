@@ -1,6 +1,6 @@
   
 * {margin:0}
-/* *********|makes modules responsive|******* */     
+/* *********|makes .forecast disappear when small and all responsive|******* */     
         @media all and (max-width: 37.5em) {
         .forecast {display: none;}
         li a:not(:first-child) {display: none;}
@@ -23,14 +23,15 @@
         }
         @media only screen and (min-width: 37.5em) {
             header, nav {margin: 0 auto; max-width: 600px;
-            }h1{text-align: center; text-decoration: none;}
+            }
+            h1{text-align: center; text-decoration: none;}
         }
 /* ***********|body|******************* */        
         h3 {color:gray;}
         body {font-family: 'Libre Franklin', sans-serif;
               position: absolute;
               top: 50px;             
-              background-color: blue;
+              background-color: cadetblue;
               margin:5px;             
              }        
   /********************|navbar|*************/
@@ -58,7 +59,7 @@
         li a {
            float: left;
            display: block;
-           color: #0000ff;
+           color: cadetblue;
            text-align: center;
            padding: 5px 5px;
            text-decoration: none;
@@ -70,11 +71,11 @@
            }
            li {
             float: left;
-            border-right: 1px solid blue;    
+            border-right: 1px solid cadetblue;    
            }
            /*li:last-child {
             border-right: none; float:right;
-            border-left: 1px solid blue;
+            border-left: 1px solid cadetblue;
             float: right;
             left: 20px;
            }*/
@@ -91,17 +92,22 @@
             border-radius: 50%;           
         }
         figure.vane figcaption {font-size: 10px; 
-                                position: absolute; float:left}
+                                position: absolute; float: left;}
         h1 {margin: 0;
             padding: .5rem;
-            font-size:220%
+            font-size:220%;
+            width:120% ;
            }          
          header {color: white;
-         width: 100%;
-         background-image: url("/assignments/lesson-6/image/dark-cloud.jpeg");        
+         position:relative;
+         margin-left: 0;
+         
+         
+         background-image:url("/assignments/lesson-6/image/dark-cloud.jpeg");        
          background-repeat: no-repeat;
          background-size: cover;
-         background-color: gray;    
+         background-color: gray;
+         background-position:right;
          border-radius: 5px;
          text-align: left;               
         }
@@ -116,28 +122,27 @@
          border-radius: 5px;        
         }    
    /*************| first section |***************/
-        section figure img  {position: relative;
+       section figure img  {
+        position: relative;
         width:70%;
-        margin: -2% -6% 0% 15%;
+        margin: -2% -6% 0 15%;
         float:right;
         }       
    /***********| second section |***************/     
         table {width: 100%;}
-        table, th, td {border: 1px solid blue;        
+        table, th, td {border: 1px solid cadetblue;        
         }
         th {color: lightcyan;
-            background: blue;
+            background: cadetblue;
         }
-        td {background: gold;}
-       
-       
+        td {background: gold;}       
         section {
-         border-top: 2px solid blue;
+         border-top: 2px solid cadetblue;
         }        
         .forecast {
-         border-top: 2px solid blue;
+         border-top: 2px solid cadetblue;
         }
-        main div {color:blue;}
+        main div {color: cadetblue;}
     /***********| article |******************/
         article img {position: inherit;
             float:right;
@@ -145,21 +150,21 @@
              }
         article p {text-align: left;
                    font-size: 90%;
-                   color:blue;
+                   color: cadetblue;
                    margin-left: inherit;
                    margin-right: inherit;
                    }
     /****************|footer|*******************/
-        footer {color: blue; background-color: lightcyan;
+        footer {color: cadetblue; background-color: lightcyan;
          border-radius: 5px;
          padding: 2%;
          font-size: 80%;
-         margin-top: 1%
+         margin-top: 1%;
         }
         aside {
-         border-left: 1px solid blue;
+         border-left: 1px solid cadetblue;
          width: 20%;
          text-align:center;
          float:right;
-         font-size: 70%
+         font-size: 70%;
                  }

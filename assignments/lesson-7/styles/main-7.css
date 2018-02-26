@@ -1,0 +1,174 @@
+  
+* {margin:0}
+/* *********|makes .forecast disappear when small and all responsive|******* */     
+        @media all and (max-width: 37.5em) {
+        .forecast {display: none;}
+        li a:not(:first-child) {display: none;}
+        nav.responsive {position: relative;}   
+            nav.responsive button {
+                position: absolute;
+                right: 0; top: 0;
+            }
+            nav.responsive li {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+            }
+            nav.responsive li a {
+                padding: 1rem; text-align: center;
+                display: block;text-decoration: none;
+            }
+            nav.responsive li a:hover {background-color: #ddd;}
+        }
+        @media only screen and (min-width: 37.5em) {
+            header, nav {margin: 0 auto; max-width: 600px;
+            }
+            h1{text-align: center; text-decoration: none;}
+        }
+
+  /********************|navbar|*************/
+        nav { position: fixed;}
+        nav.container {display: flex;
+            justify-content: space-around;
+                                  }
+        button.hamburger {right: 2%;
+            float: right;
+            display: block;
+            top: 2.5px;
+            position:fixed;
+           }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: gold;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0;
+            right: 0;/* Position the navbar at the top of the page */
+            left: 0;
+            width: 100%; /* Full width */            
+           }
+           /* Links inside the navbar */
+        li a {
+           float: left;
+           display: block;
+           color: cadetblue;
+           text-align: center;
+           padding: 5px 5px;
+           text-decoration: none;
+            font-size: 17px;
+           }
+           /* Change background on mouse-over */
+           li a:hover {
+           background: gray; color: white;
+           }
+           li {
+            float: left;
+            border-right: 1px solid cadetblue;    
+           }
+           /*li:last-child {
+            border-right: none; float:right;
+            border-left: 1px solid cadetblue;
+            float: right;
+            left: 20px;
+           }*/
+        .active {
+         background-color: lightgoldenrodyellow;   
+        }
+/* ***********|body|******************* */        
+        h3 {color:gray;}
+        body {font-family: 'Libre Franklin', sans-serif;
+              position: absolute;
+              top: 5%;             
+              background-color: cadetblue;
+              margin:1% ;             
+               }      
+ /*******************|header|**********************/
+      h1 { margin:0;
+          font-size: 220%;
+          width: 200%;
+          text-align: left;
+             }
+      header figure {
+          display:inline-block;         
+          margin: 3%;          
+            }
+       header figure img {           
+            vertical-align: top;
+            border-radius: 50%;
+            width: 17%;
+        }
+        header figure figcaption {font-size: 40%;
+            width: 17%;
+            text-align: center;
+            padding: 1%;
+            }                
+         header {color: white;       
+         padding-right:40%;         
+         background-image:url("/assignments/lesson-7/image/dark-cloud.jpeg");        
+         background-repeat: no-repeat;
+         background-size: cover;         
+         background-color: gray;        
+         border-radius: 2%;
+         text-align: left;               
+        }
+          
+   /******************|main|**************************/
+        h2 {color: gray;
+            font-size: 180%;
+            margin:5px;
+           }
+           main {display:block;
+         background: lightcyan;
+         border-radius: 5px;        
+        }    
+   /*************| first section |***************/
+       section figure img  {
+        position: relative;
+        width:70%;
+        margin: -2% -6% 0 15%;
+        float:right;
+        }       
+   /***********| second section |***************/     
+        table {width: 100%;}
+        table, th, td {border: 1px solid cadetblue;        
+        }
+        th {color: lightcyan;
+            background: cadetblue;
+        }
+        td {background: gold;}       
+        section {
+         border-top: 2px solid cadetblue;
+        }        
+        .forecast {
+         border-top: 2px solid cadetblue;
+        }
+        main div {color: cadetblue;}
+    /***********| article |******************/
+        article img {position: inherit;
+            float:right;
+            margin:4% 1% 1% 1%; width: 50%;
+             }
+        article p {text-align: left;
+                   font-size: 90%;
+                   color: cadetblue;
+                   margin-left: inherit;
+                   margin-right: inherit;
+                   }
+              
+    /****************|footer|*******************/
+        footer {color: cadetblue; background-color: lightcyan;
+         border-radius: 5px;
+         padding: 2%;
+         font-size: 80%;
+         margin-top: 1%;
+        }
+        aside {
+         border-left: 1px solid cadetblue;
+         width: 20%;
+         text-align:center;
+         float:right;
+         font-size: 70%;
+                 }
